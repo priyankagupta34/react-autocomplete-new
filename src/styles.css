@@ -1,10 +1,50 @@
+*,
+::before {
+  box-sizing: border-box;
+}
 .App {
   font-family: sans-serif;
   text-align: center;
-  height: 91vh;
+  height: 40vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
+}
+
+.container {
+  position: relative;
+}
+
+.auths {
+  box-shadow: 0 4px 5px #4f99cd;
+  position: absolute;
+  width: 200px;
+  text-align: left;
+  font-size: 0.9em;
+  text-transform: capitalize;
+  left: 6px;
+  border-radius: 4px;
+  /* width: 20vw; */
+}
+
+.nayest {
+  padding: 10px;
+  border-bottom: 1px solid rgb(229, 229, 231);
+  width: 200px;
+}
+
+.nevada {
+  width: 200px;
+  border: 0.5px solid #8f8f8f;
+  box-shadow: 0 0px 5px #3894d5;
+  padding: 9px;
+  border-radius: 4px;
+  /* outline: none; */
+}
+
+.nevada:focus {
+  box-shadow: 0 -3px 5px #3894d5;
+  transition: 0.5s;
 }

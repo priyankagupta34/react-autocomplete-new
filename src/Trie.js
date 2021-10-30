@@ -19,13 +19,11 @@ Trie.prototype.addWord = function (word) {
 };
 
 Trie.prototype.autocompleteresult = function (word) {
-  console.log("word", word);
   if (!word) return [];
   const result = [];
   let node = this.trie;
   for (let char of word) {
     if (!node) return result;
-    // if(node.val) result.push(node.val);
     node = node.children[char];
   }
 
@@ -42,12 +40,5 @@ Trie.prototype.autocompleteresult = function (word) {
 };
 
 let trie = new Trie();
-
-// function automcomplete(valueSet) {
-//   valueSet.forEach((element) => {
-//     trie.addWord(element);
-//   });
-//   return trie.autocompleteresult();
-// };
 
 export default trie;
